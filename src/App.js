@@ -1,9 +1,9 @@
 import React, { useCallback } from 'react';
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import logo from './logo.svg';
 import './App.css';
 import particlesOptions from "./particles.json";
+import About from "./components/about/about";
 
 function App() {
     const particlesInit = useCallback(main => {
@@ -12,32 +12,71 @@ function App() {
 
     return (
         <div className="App">
-            <Particles options={particlesOptions} init={particlesInit}/>
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo"/>
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <p>
-                    Edit <code>src/particles.json</code> to customize Particles, then save to reload.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-                <a
-                    className="App-link"
-                    href="https://particles.js.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    See Particles samples
-                </a>
-            </header>
+            <Particles options={{background: {
+                color: 'A3A3A3', 
+            },
+            fpsLimit: 140,
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    resize: true,
+                    onHover: {
+                        enable: true,
+                        mode: 'repulse',
+                    }
+                }
+                },
+                particles: {
+                    color: {
+                        value: '84DCFF'
+                    },
+                    number: {
+                        density: {
+                            enable: true,
+                            area: 1080
+                        },
+                        limit: 0,
+                        value: 200,
+                    },
+                    opacity: {
+                        animation: {
+                            enable: true,
+                            minimumValue: 0.05,
+                            speed: 1,
+                            sync: false
+                        },
+                        random: {
+                            enable: true,
+                            minimumValue: 0.05,
+                        }, 
+                        value: 1
+                    },
+                    shape: {
+                        type: 'circle'
+                    },
+                    size: {
+                        random: {
+                            enable: true,
+                            minimumValue: 0.05
+                        },
+                        value: 5
+                    },
+                    move: {
+                        direction: "none",
+                        enable: true,
+                        outModes: {
+                            default: 'bounce'
+                        },
+                        random: false,
+                        speed: 3,
+                        straight: false
+                    }
+                }
+            }
+
+            } init={particlesInit}/>
+            <h1> Ishan's Page </h1>
+            <About />
         </div>
     );
 }
