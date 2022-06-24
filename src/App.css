@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;800&display=swap');
+
+
 .App {
     text-align: center;
 }
@@ -5,6 +8,13 @@
 .App-logo {
     height: 40vmin;
     pointer-events: none;
+}
+
+.title {
+    margin: 80px 0px 0px 560px;
+    font-family: 'Sora', sans-serif;
+    font-size: 50px;
+    color: rgb(14, 44, 180);
 }
 
 @media (prefers-reduced-motion: no-preference) {
