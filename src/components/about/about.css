@@ -1,7 +1,7 @@
-.about {
-    height: 70vh;
-    width: 60vw;
-    border: black 2px solid;
-    margin: 0 auto;
+.photo {
+    height: 250px;
+}
 
+.photoContainer {
+    text-align: center;
 }

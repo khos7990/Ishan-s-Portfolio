@@ -15,12 +15,12 @@ export default function App() {
     <div>
         <Particles/>
         <Nav/>
-        <h1 className='title'>Welcome to Ishan's Portfolio</h1>
         <Routes>
           <Route path= "/about" element={<About />}/>
           <Route path= "/projects" elemment={<Projects />}/>
           <Route path= "/education" element={<Education />}/>
         </Routes>
+        <About/>
     </div>
   )
 }

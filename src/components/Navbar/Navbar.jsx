@@ -1,4 +1,4 @@
-import { AppBar, Toolbar } from "@mui/material";
+import { AppBar, Toolbar, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import './Navbar.css';
 
@@ -8,10 +8,9 @@ export default function Nav () {
         <div>
             <AppBar>
                <Toolbar className="toolbar"> 
-                   <h3><Link to="/">Home</Link></h3> 
-                   <h3><Link to= "/about">About Me</Link></h3>
-                   <h3><Link to="/education">Education</Link></h3>
-                   <h3><Link to="/projects">Projects</Link></h3>
+                <Typography variant="h3" ><Link to="/">Home</Link></Typography>
+                <Typography variant="h3"><Link to="/education">Education</Link></Typography>
+                <Typography variant="h3"><Link to="/projects">Projects</Link></Typography>
                    </Toolbar>
             </AppBar>
         </div>
