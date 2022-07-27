@@ -12,7 +12,7 @@ export default function Particle() {
     return (
         <div className="App">
             <Particles options={{background: {
-                color: 'A3A3A3', 
+                color: '#1B2631', 
             },
             fpsLimit: 140,
             interactivity: {
@@ -27,7 +27,7 @@ export default function Particle() {
                 },
                 particles: {
                     color: {
-                        value: '84DCFF'
+                        value: '#52BE80'
                     },
                     number: {
                         density: {

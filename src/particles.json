@@ -1,7 +1,7 @@
 {
   "background": {
     "color": {
-      "value": "#282c34"
+      "value": "#010308"
     }
   },
   "fpsLimit": 120,
@@ -29,10 +29,10 @@
   },
   "particles": {
     "color": {
-      "value": "#ffffff"
+      "value": "#283747"
     },
     "links": {
-      "color": "#ffffff",
+      "color": "#283747",
       "distance": 150,
       "enable": true,
       "opacity": 0.5,
