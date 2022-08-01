@@ -3,7 +3,6 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import './App.css';
 import About from "./components/about/about";
 import Projects from "./components/Projects/Projects";
-import Education from "./components/Education/Education";
 import Home from "./components/Home/Home";
 import React from 'react';
 import Particles from './components/Particles/Particles';
@@ -16,6 +15,9 @@ const theme = createTheme({
       main: '#17202A',
       darker: '#053e85',
     },
+    secondary: {
+      main: 'rgb(233, 158, 18)'
+    }
   },
 });
 
@@ -26,11 +28,10 @@ export default function App() {
       <ThemeProvider theme={theme}>
         <Nav/>
         <Routes>
+          <Route path="/" element={<Home/>}/>
           <Route path= "/about" element={<About />}/>
-          <Route path= "/projects" elemment={<Projects />}/>
-          <Route path= "/education" element={<Education />}/>
+          <Route path= "/projects" element={<Projects />}/>
         </Routes>
-        <Home/>
         </ThemeProvider>
     </div>
   )

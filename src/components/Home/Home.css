@@ -1,5 +1,27 @@
-
+.name {
+    color: rgb(233, 158, 18);
+    font-size: 130px;
+    font-weight:500;
+}
 
 .text {
       color: rgb(233, 158, 18);
+}
+
+.photo {
+    height: 500px;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin-top: 150px;
+    margin-left: 150px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.introText {
+    margin-left: 20px;
 }
