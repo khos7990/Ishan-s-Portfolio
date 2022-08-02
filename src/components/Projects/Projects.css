@@ -2,3 +2,18 @@
     color: rgb(233, 158, 18);
 }
 
+.nextBtn {
+    margin-top: -650px;
+    margin-left: 1000px;
+   text-align: center;
+}
+
+.previousBtn {
+    margin-top: -185px;
+    text-align: center;
+    margin-right: 1000px;
+}
+
+.bio {
+    margin-top: 900px;
+}
