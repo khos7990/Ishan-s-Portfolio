@@ -21,10 +21,11 @@ export default function Projects() {
         require("../../Pictures/Grow-Together/LOGIN.png"),
         require("../../Pictures/Grow-Together/HOME.png"),
         require("../../Pictures/Grow-Together/BESTMATCH.png"),
+        require("../../Pictures/Grow-Together/MATCHES.png"),
         require("../../Pictures/Grow-Together/MYPLANTS.png"),
       ],
       description:
-        "A React.js based frontend with a backend running Django REST Framework with PostgreSQL. Using PlantNet's machine's learning api, users are able to upload photos and have their plant identified. Our webscrapped database will then find the plant match, and pull out the different charactersitics of the plant,and\
+        "A mobile app using React.js in the frontend with a backend running Django REST Framework with PostgreSQL. Using PlantNet's machine's learning api, users are able to upload photos and have their plant identified. Our webscrapped database will then find the plant match, and pull out the different charactersitics of the plant,and\
             will then suggest different plants that fit the same charactersitics. Users are then able to match with different plants, and are able to view all matches! Try it out!",
     },
 
@@ -52,6 +53,18 @@ export default function Projects() {
       description:
         "Using a Marvel API, Users can search/click on a selected movie, and are able to read a brief overview about the movie, and watch the trailer. By using google Oauth, a user can log in and is able to perform CRUD functionality. User's can choose to create or update their review, and/or rating, and can also delete their review if they choose to do so.",
     },
+
+    {
+      name: "BlackJack",
+      images: [
+        require("../../Pictures/BlackJack/Home.png"),
+        require("../../Pictures/BlackJack/Ace.png"),
+        require("../../Pictures/BlackJack/Winner.png"),
+        require("../../Pictures/BlackJack/Mobile.png"),
+      ],
+      description:
+        "Using Vanilla JS, HTML, and CSS, users can experience the game of blackjack on their desktop or mobile devices. The game objective is to reach a score of 21, or have the closest number to 21, compared to any of the other players on the table. The face values of cards is the same numerical number which is counted towards the player's total. Royal cards, such as Kings, Queen's, and Jack's are valued at 10. (Ex. 10 Hearts + King Of Diamonds = 20). The Ace card is valued either at 11, or 1.",
+    },
   ];
 
   const [projectName, setProjectName] = useState(projects[0].name);
@@ -63,7 +76,7 @@ export default function Projects() {
   const images = projectImages.map((image) => (
     <Card
       sx={{
-        maxWidth: 650,
+        maxWidth: 1250,
         margin: "0 auto",
         backgroundColor: "primary.main",
         border: 1,
@@ -71,7 +84,7 @@ export default function Projects() {
       }}
     >
       <CardMedia
-        sx={{ objectFit: "fill" }}
+        sx={{ objectFit: "fill", height: 750 }}
         component="img"
         image={image}
         alt="green iguana"
@@ -93,21 +106,21 @@ export default function Projects() {
 
   function prevBtn(e) {
     projects.findIndex(function (project, idx) {
-        let index = project.name === projectName;
-        if (index === true) {
-          let prevIndex = idx - 1;
-          setProjectName(projects[prevIndex].name);
-          setProjectImages(projects[prevIndex].images);
-          setProjectDescription(projects[prevIndex].description);
-        }
-      });
-    }
+      let index = project.name === projectName;
+      if (index === true) {
+        let prevIndex = idx - 1;
+        setProjectName(projects[prevIndex].name);
+        setProjectImages(projects[prevIndex].images);
+        setProjectDescription(projects[prevIndex].description);
+      }
+    });
+  }
 
   return (
     <div>
       <Card
         sx={{
-          maxWidth: 650,
+          maxWidth: 1250,
           height: 970,
           margin: "0 auto",
           mt: 10,
@@ -127,14 +140,14 @@ export default function Projects() {
         <Box>
           <Card
             sx={{
-              maxWidth: 650,
+              maxWidth: 1250,
               margin: "0 auto",
               bottom: 20,
               position: "absolute",
               backgroundColor: "primary.main",
             }}
           >
-            <CardContent sx={{ width: 625, height: 220 }}>
+            <CardContent sx={{ width: 1200, height: 220 }}>
               <Typography fontSize="20px" color="secondary.main">
                 {" "}
                 {projectDescription}
