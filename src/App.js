@@ -1,7 +1,7 @@
 import {Route, Routes} from "react-router-dom";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import './App.css';
-import About from "./components/about/about";
+import Education from "./components/Education/Education";
 import Projects from "./components/Projects/Projects";
 import Home from "./components/Home/Home";
 import React from 'react';
@@ -29,7 +29,7 @@ export default function App() {
         <Nav/>
         <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path= "/about" element={<About />}/>
+          <Route path= "/education" element={<Education/>}/>
           <Route path= "/projects" element={<Projects />}/>
         </Routes>
         </ThemeProvider>
