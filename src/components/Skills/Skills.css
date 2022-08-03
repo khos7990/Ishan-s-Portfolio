@@ -1,0 +1,19 @@
+
+
+
+.icon-container {
+    height: 50vh;
+    width: 30vw;
+    display: flex;
+    margin-left: 150px;
+    margin-top: 150px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.icon {
+    height: 15vh;
+    width: 7vw;
+
+}
+

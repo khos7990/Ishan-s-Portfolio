@@ -13,7 +13,7 @@ export default function Nav () {
                 <Typography sx={{fontSize: '20px', wordSpacing: 10}} className="logo" variant="h3" >IK <EmailIcon fontSize="sm"/>i_shan-k@hotmail.com
                 </Typography>
                 <Link style={{textDecoration: 'none'}} to={'/'}><Typography variant="h3"sx={{fontSize: 35, letterSpacing: 2, textDecoration: 'none', color:"white"}}>Home</Typography> </Link>
-                <Link style={{textDecoration: 'none'}} to={'/education'}><Typography variant="h3" sx={{fontSize: 35, letterSpacing: 2, textDecoration: 'none', color:"white"}}>Education</Typography></Link>
+                <Link style={{textDecoration: 'none'}} to={'/skills'}><Typography variant="h3" sx={{fontSize: 35, letterSpacing: 2, textDecoration: 'none', color:"white"}}>Skills</Typography></Link>
                 <Link style={{textDecoration: 'none'}} to={'/projects'}><Typography variant="h3" sx={{fontSize: 35, letterSpacing: 2, textDecoration: 'none', color:"white"}}>Projects</Typography></Link>
                    </Toolbar>
             </AppBar>
