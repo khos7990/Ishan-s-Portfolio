@@ -1,0 +1,67 @@
+.skill-container {
+    position: relative;
+    display: flex;
+    border: 2px solid yellow;
+    height: 100vh;
+}
+
+
+.icon-container {
+    height: 30vh;
+    width: 45vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+}
+
+.icon {
+    height: 15vh;
+    width: 7vw;
+
+}
+
+.resume-container {
+    width: 40vw;
+    height: 90vh;
+    margin-top: 100px;
+    position: absolute;
+    right: 0;
+}
+
+.resume {
+
+    height: 65vh;
+    text-align: center;
+    
+}
+
+.resumepic {
+    height: 65vh;
+    width: 30vw;
+}
+
+.about {
+    width: 50vw;
+    height: 45vh;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.title {
+
+    height: 5vh;
+    margin: 0;
+    text-align: center;
+}
+
+
+.technologies {
+
+    height: 35vh;
+    width: 45vw;
+    position: absolute;
+    bottom: 0;
+    margin-left: 30px;
+
+}
