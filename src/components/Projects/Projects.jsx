@@ -77,6 +77,7 @@ export default function Projects() {
     <Card
       sx={{
         maxWidth: 1250,
+        height: 750,
         margin: "0 auto",
         backgroundColor: "primary.main",
         border: 1,
@@ -84,7 +85,7 @@ export default function Projects() {
       }}
     >
       <CardMedia
-        sx={{ objectFit: "fill", height: 750 }}
+        sx={{objectFit: 'inherit', height: 750 }}
         component="img"
         image={image}
         alt="green iguana"

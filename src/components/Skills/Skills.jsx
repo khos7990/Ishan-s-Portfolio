@@ -1,5 +1,7 @@
-import { Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import React from "react";
+import Resume from '../../Resume/Resume.pdf'
+import ResumeScreenshot from '../../Resume/Resume-screenshot.png'
 import "./Skills.css";
 
 export default function Education() {
@@ -28,6 +30,15 @@ export default function Education() {
       {/* <div className="title"><Typography sx={{marginLeft: -50, fontSize: 50}} variant="h1" color='secondary.main'>Technologies</Typography></div> */}
       <div className="icon-container">
         {displayIcons}
+      </div>
+      <div className="resume-container">
+        <Typography variant='h3' color='secondary.main' sx={{textAlign: 'center'}}>My Resume</Typography>
+        <div className="resume">
+        <img className="resumepic" src={ResumeScreenshot}></img>
+        </div>
+        <a href={Resume} download={Resume}>
+          <Button sx={{fontSize: 50, position: 'absolute', bottom: 0 }} variant="contained" >Click Here to download Resume</Button>
+        </a>
       </div>
     </div>
   );
