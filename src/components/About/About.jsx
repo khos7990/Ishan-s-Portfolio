@@ -26,7 +26,7 @@ export default function Education() {
     </div>
   ))
   return (
-    <div className="skill-container">
+    <div className="skill-container" id="about">
       <div className='about'>
         <Typography variant='h4' className='text' sx={{textAlign: 'center', fontWeight: 'bold'}}>About Me</Typography>
         <Typography className='text' variant='h5'>Hey, my name is Ishan and i'm happy you've came to visit my site. Let me start off by telling you that I am from Missisauga, Ontario, Canada. I graduated from

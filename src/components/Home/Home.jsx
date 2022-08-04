@@ -14,7 +14,7 @@ import photo from "../../photo.jpeg";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="container" id="home">
       <div className="introText">
         <Typography
           sx={{color: "#CCD1D1" }}

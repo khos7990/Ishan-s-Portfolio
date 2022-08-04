@@ -39,14 +39,15 @@ export default function Contact() {
     };
   
   return (
-    <div> <div className="contact-form">
+    <div className='contact-container' id='contact'>
+       <div className="contact-form">
          
-    <Card style={{margin: '0 auto', maxWidth: 550, height: 630, color: 'primary.main',}}>
-      <CardContent>
+    <Card sx={{maxWidth: 550, height: 630, color: 'primary.main', borderRadius: 10, border: '3px solid black', opacity: 0.9}}>
+      <CardContent sx={{height: 630, bgcolor: 'grey', opacity: 1, maxWidth: 550}}>
         <Typography textAlign='center' color='secondary' variant="h4">Contact Me</Typography>
         <form ref={form} onSubmit={sendEmail}>
         <TextField
-          sx={{paddingTop: 3}}  
+          sx={{paddingTop: 3, color: 'white', border: '2px solid white'}}  
           required
           fullWidth
           label="Name"
