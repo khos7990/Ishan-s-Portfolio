@@ -3,6 +3,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import './App.css';
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
+import Contact from "./components/Contact/Contact";
 import Home from "./components/Home/Home";
 import React from 'react';
 import Particles from './components/Particles/Particles';
@@ -31,6 +32,7 @@ export default function App() {
           <Route path="/" element={<Home/>}/>
           <Route path= "/about" element={<About/>}/>
           <Route path= "/projects" element={<Projects />}/>
+          <Route path= "/contact" element={<Contact/>}/>
         </Routes>
         </ThemeProvider>
     </div>

@@ -1,0 +1,114 @@
+import React from 'react'
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import {
+    Card,
+    CardContent,
+    InputAdornment,
+    TextField,
+    Typography,
+    Button,
+  } from "@mui/material";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import EmailIcon from "@mui/icons-material/Email";
+import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
+import MessageIcon from "@mui/icons-material/Message";
+import './Contact.css'
+
+
+  
+
+export default function Contact() {
+    const form = useRef();
+  
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_frad4yg', 'template_cl31ukk', form.current, 't2XWmEDFNLIP16RH8')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
+  
+  return (
+    <div> <div className="contact-form">
+         
+    <Card style={{margin: '0 auto', maxWidth: 550, height: 630, color: 'primary.main',}}>
+      <CardContent>
+        <Typography textAlign='center' color='secondary' variant="h4">Contact Me</Typography>
+        <form ref={form} onSubmit={sendEmail}>
+        <TextField
+          sx={{paddingTop: 3}}  
+          required
+          fullWidth
+          label="Name"
+          placeholder="Name"
+          name="user_name"
+          variant="filled"
+          InputProps={{
+              startAdornment: (
+              <InputAdornment position="start">
+                <AccountCircleIcon />
+              </InputAdornment>
+            ),
+          }}
+        ></TextField>
+        <TextField
+         sx={{paddingTop: 3}}  
+        required
+          fullWidth
+          label="Email"
+          placeholder="Your Email"
+          name="user_email"
+          type="email"
+          variant="filled"
+          InputProps={{
+            startAdornment: (
+              <InputAdornment position="start">
+                <EmailIcon />
+              </InputAdornment>
+            ),
+          }}
+        ></TextField>
+        <TextField
+         sx={{paddingTop: 3}}  
+        required
+          fullWidth
+          type="number"
+          label="Phone Number"
+          placeholder="Your Phone Number"
+          variant="filled"
+          InputProps={{
+            startAdornment: (
+              <InputAdornment position="start">
+                <ContactPhoneIcon />
+              </InputAdornment>
+            ),
+          }}
+        ></TextField>
+        <TextField
+         sx={{paddingTop: 3}}  
+        required
+          multiline rows={5}
+          fullWidth
+          label="Message"
+          placeholder="Your Message"
+          name="message"
+          variant="filled"
+          InputProps={{
+            startAdornment: (
+              <InputAdornment position="start">
+                <MessageIcon />
+              </InputAdornment>
+            ),
+          }}
+        ></TextField>
+        <Button  sx={{marginTop: 3, fontSize: 20}} type="submit" value="Send" fullWidth color="secondary" variant="contained">Submit Message</Button>
+        </form>
+      </CardContent>
+    </Card>
+  </div></div>
+  )
+}

@@ -15,6 +15,7 @@ export default function Nav () {
                 <Link style={{textDecoration: 'none'}} to={'/'}><Typography variant="h3"sx={{fontSize: 35, letterSpacing: 2, textDecoration: 'none', color:"white"}}>Home</Typography> </Link>
                 <Link style={{textDecoration: 'none'}} to={'/about'}><Typography variant="h3" sx={{fontSize: 35, letterSpacing: 2, textDecoration: 'none', color:"white"}}>About</Typography></Link>
                 <Link style={{textDecoration: 'none'}} to={'/projects'}><Typography variant="h3" sx={{fontSize: 35, letterSpacing: 2, textDecoration: 'none', color:"white"}}>Projects</Typography></Link>
+                <Link style={{textDecoration: 'none'}} to={'/contact'}><Typography variant="h3" sx={{fontSize: 35, letterSpacing: 2, textDecoration: 'none', color:"white"}}>Contact Me</Typography></Link>
                    </Toolbar>
             </AppBar>
         </div>

@@ -1,7 +1,6 @@
 .skill-container {
     position: relative;
     display: flex;
-    border: 2px solid yellow;
     height: 100vh;
 }
 
