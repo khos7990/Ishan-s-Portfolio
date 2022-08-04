@@ -1,5 +1,5 @@
 import React from 'react'
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import {
     Card,
@@ -19,7 +19,11 @@ import './Contact.css'
   
 
 export default function Contact() {
+
+  const [successMessage, setsuccessMessage] = useState(false);
+
     const form = useRef();
+
   
     const sendEmail = (e) => {
       e.preventDefault();
@@ -27,9 +31,11 @@ export default function Contact() {
       emailjs.sendForm('service_frad4yg', 'template_cl31ukk', form.current, 't2XWmEDFNLIP16RH8')
         .then((result) => {
             console.log(result.text);
+            setsuccessMessage(true)
         }, (error) => {
             console.log(error.text);
         });
+        e.target.reset()
     };
   
   return (
@@ -77,6 +83,7 @@ export default function Contact() {
         required
           fullWidth
           type="number"
+          name="number"
           label="Phone Number"
           placeholder="Your Phone Number"
           variant="filled"
@@ -106,6 +113,7 @@ export default function Contact() {
           }}
         ></TextField>
         <Button  sx={{marginTop: 3, fontSize: 20}} type="submit" value="Send" fullWidth color="secondary" variant="contained">Submit Message</Button>
+        {successMessage ? <Typography sx={{mt: 2}} variant='h5' color='green'>Your message has been sent! I will get back to you shortly!</Typography> : null}
         </form>
       </CardContent>
     </Card>
