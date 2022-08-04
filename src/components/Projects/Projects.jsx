@@ -118,15 +118,15 @@ export default function Projects() {
   }
 
   return (
-    <div>
+    <div className='projects'id="projects">
       <Card
         sx={{
           maxWidth: 1250,
-          height: 970,
+          height: 920,
           margin: "0 auto",
           mt: 10,
           backgroundColor: "primary.main",
-          border: 1,
+          borderRadius: 10,
           position: "relative",
         }}
       >
@@ -143,12 +143,12 @@ export default function Projects() {
             sx={{
               maxWidth: 1250,
               margin: "0 auto",
-              bottom: 20,
+              bottom: 0,
               position: "absolute",
-              backgroundColor: "primary.main",
+              backgroundColor: "primary.main"
             }}
           >
-            <CardContent sx={{ width: 1200, height: 220 }}>
+            <CardContent sx={{ width: 1200, height: 140 }}>
               <Typography fontSize="20px" color="secondary.main">
                 {" "}
                 {projectDescription}
