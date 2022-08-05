@@ -78,11 +78,12 @@ export default function Projects() {
       sx={{
         maxWidth: 1250,
         backgroundColor: "primary.main",
-        height: 650
+        height: 500,
+        backgroundColor: "transparent",
       }}
     >
       <CardMedia
-        sx={{objectFit: 'scale-down', height: 650 }}
+        sx={{objectFit: 'scale-down', height: 500,  }}
         component="img"
         image={image}
         alt="green iguana"
@@ -118,11 +119,11 @@ export default function Projects() {
     <div className='projects'id="projects">
       <Card
         sx={{
-          maxWidth: 1250,
-          height: 920,
+          maxWidth: 775,
+          height: 840,
           margin: "0 auto",
           mt: 10,
-          backgroundColor: "primary.main",
+          backgroundColor: "transparent",
           borderRadius: 10,
           position: "relative",
         }}
@@ -141,11 +142,13 @@ export default function Projects() {
               maxWidth: 1250,
               margin: "0 auto",
               bottom: 0,
+              height: 200,
               position: "absolute",
-              backgroundColor: "primary.main",
+              backgroundColor: "black",
+              opacity: 0.9,
             }}
           >
-            <CardContent sx={{ width: 1200, height: 140 }}>
+            <CardContent sx={{ width: 750, height: 140 }}>
               <Typography fontSize="20px" color="secondary.main">
                 {" "}
                 {projectDescription}

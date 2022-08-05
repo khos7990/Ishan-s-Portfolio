@@ -14,7 +14,7 @@ export default function Nav () {
                 </Typography>
                 <Link to="home" spy={true} smooth={true} offset={-200} duration={500} className="navbar-link"><Typography className='navtext' variant="h3"style={{fontSize: 35, letterSpacing: 2, color:"white"}}>Home</Typography> </Link>
                 <Link to="about" spy={true} smooth={true} offset={25} duration={500}className="navbar-link"><Typography className='navtext' variant="h3" style={{fontSize: 35, letterSpacing: 2, color:"white"}}>About</Typography></Link>
-                <Link to="projects" spy={true} smooth={true} offset={-70} duration={500} className="navbar-link"><Typography className='navtext' variant="h3" style={{fontSize: 35, letterSpacing: 2, color:"white"}}>Projects</Typography></Link>
+                <Link to="projects" spy={true} smooth={true} offset={-120} duration={500} className="navbar-link"><Typography className='navtext' variant="h3" style={{fontSize: 35, letterSpacing: 2, color:"white"}}>Projects</Typography></Link>
                 <Link to="contact" spy={true} smooth={true} offset={50} duration={500} className="navbar-link"><Typography className='navtext' variant="h3" style={{fontSize: 35, letterSpacing: 2, color:"white"}}>Contact Me</Typography></Link>
                    </Toolbar>
             </AppBar>

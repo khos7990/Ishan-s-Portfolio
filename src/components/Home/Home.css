@@ -38,6 +38,28 @@
 .introText {
     margin-left: 20px;
     height: 40vh;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
+.socials {
+    height: 20vh;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 70px;
+    margin-left: 20px;
+    display: flex;
+}
+
+.Linkedin {
+
+    width: 180px;
+    text-align: center;
+}
+
+.Github {
+ 
+    width: 180px;
+    margin-left: 20px;
+    text-align: center;
+
+}
