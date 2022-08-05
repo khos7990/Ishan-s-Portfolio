@@ -4,7 +4,7 @@ import {
   ToggleButton,
   Typography,
 } from "@mui/material";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Card from "@mui/material/Card";
 import React from "react";
 import Carousel from "react-material-ui-carousel";
@@ -72,6 +72,8 @@ export default function Projects() {
   const [projectDescription, setProjectDescription] = useState(
     projects[0].description
   );
+  const [showNextIcon, setshowNextIcon] = useState(true);
+  const [showPrevIcon, setshowPrevIcon] = useState(false);
 
   const images = projectImages.map((image) => (
     <Card
@@ -83,7 +85,7 @@ export default function Projects() {
       }}
     >
       <CardMedia
-        sx={{objectFit: 'scale-down', height: 500,  }}
+        sx={{ objectFit: "scale-down", height: 500 }}
         component="img"
         image={image}
         alt="green iguana"
@@ -96,9 +98,18 @@ export default function Projects() {
       let index = project.name === projectName;
       if (index === true) {
         let nextIndex = idx + 1;
-        setProjectName(projects[nextIndex].name);
-        setProjectImages(projects[nextIndex].images);
-        setProjectDescription(projects[nextIndex].description);
+
+        if (nextIndex < 3) {
+          setProjectName(projects[nextIndex].name);
+          setProjectImages(projects[nextIndex].images);
+          setProjectDescription(projects[nextIndex].description);
+          setshowPrevIcon(true);
+        } else if (nextIndex === 3) {
+          setProjectName(projects[nextIndex].name);
+          setProjectImages(projects[nextIndex].images);
+          setProjectDescription(projects[nextIndex].description);
+          setshowNextIcon(false);
+        }
       }
     });
   }
@@ -108,70 +119,85 @@ export default function Projects() {
       let index = project.name === projectName;
       if (index === true) {
         let prevIndex = idx - 1;
-        setProjectName(projects[prevIndex].name);
-        setProjectImages(projects[prevIndex].images);
-        setProjectDescription(projects[prevIndex].description);
+        console.log(prevIndex);
+        if (prevIndex > 0) {
+          setProjectName(projects[prevIndex].name);
+          setProjectImages(projects[prevIndex].images);
+          setProjectDescription(projects[prevIndex].description);
+          setshowNextIcon(true);
+        } else if (prevIndex === 0) {
+          setProjectName(projects[prevIndex].name);
+          setProjectImages(projects[prevIndex].images);
+          setProjectDescription(projects[prevIndex].description);
+          setshowPrevIcon(false);
+        }
       }
     });
   }
 
   return (
-    <div className='projects'id="projects">
-      <Card
-        sx={{
-          maxWidth: 775,
-          height: 840,
-          margin: "0 auto",
-          mt: 10,
-          backgroundColor: "transparent",
-          borderRadius: 10,
-          position: "relative",
-        }}
-      >
-        <Typography
-          sx={{ textAlign: "center" }}
-          variant="h4"
-          color="secondary.main"
+    <div className="projects" id="projects">
+      <div className="project-container">
+        <Card
+          sx={{
+            maxWidth: 775,
+            height: 840,
+            margin: "0 auto",
+            mt: 10,
+            backgroundColor: "transparent",
+            borderRadius: 10,
+            position: "relative",
+          }}
         >
-          {projectName}
-        </Typography>
-        <Carousel>{images}</Carousel>
-        <Box>
-          <Card
-            sx={{
-              maxWidth: 1250,
-              margin: "0 auto",
-              bottom: 0,
-              height: 200,
-              position: "absolute",
-              backgroundColor: "black",
-              opacity: 0.9,
-            }}
+          <Typography
+            sx={{ textAlign: "center" }}
+            variant="h4"
+            color="secondary.main"
           >
-            <CardContent sx={{ width: 750, height: 140 }}>
-              <Typography fontSize="20px" color="secondary.main">
-                {" "}
-                {projectDescription}
-              </Typography>
-            </CardContent>
-          </Card>
-        </Box>
-      </Card>
-      <div className="nextBtn">
-        <ToggleButton>
-          <ArrowForwardIosIcon
-            onClick={nextBtn}
-            sx={{ color: "secondary.main", fontSize: "10rem" }}
-          />
-        </ToggleButton>
-      </div>
-      <div className="previousBtn">
-        <ToggleButton>
-          <ArrowBackIosNewIcon
-            onClick={prevBtn}
-            sx={{ color: "secondary.main", fontSize: "10rem" }}
-          />
-        </ToggleButton>
+            {projectName}
+          </Typography>
+          <Carousel>{images}</Carousel>
+          <Box>
+            <Card
+              sx={{
+                maxWidth: 1250,
+                margin: "0 auto",
+                bottom: 0,
+                height: 200,
+                position: "absolute",
+                backgroundColor: "black",
+                opacity: 0.9,
+              }}
+            >
+              <CardContent sx={{ width: 750, height: 140 }}>
+                <Typography fontSize="20px" color="secondary.main">
+                  {" "}
+                  {projectDescription}
+                </Typography>
+              </CardContent>
+            </Card>
+          </Box>
+        </Card>
+        <div className="nextBtn">
+          {showNextIcon ? (
+            <ToggleButton>
+              <ArrowForwardIosIcon
+                onClick={nextBtn}
+                sx={{ color: "secondary.main", fontSize: "10rem" }}
+              />
+            </ToggleButton>
+          ) : null}
+        </div>
+        <div className="previousBtn">
+          {showPrevIcon ? (
+            <ToggleButton>
+              <ArrowBackIosNewIcon
+                onClick={prevBtn}
+                sx={{ color: "secondary.main", fontSize: "10rem" }}
+              />
+            </ToggleButton>
+          ) : null}
+        </div>
       </div>
     </div>
   );
