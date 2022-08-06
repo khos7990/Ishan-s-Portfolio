@@ -5,7 +5,7 @@ import {
   Typography,
   Button
 } from "@mui/material";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Card from "@mui/material/Card";
 import React from "react";
 import Carousel from "react-material-ui-carousel";
@@ -94,7 +94,7 @@ export default function Projects() {
       }}
     >
       <CardMedia
-        sx={{objectFit: 'scale-down', height: 500,  }}
+        sx={{ objectFit: "scale-down", height: 500 }}
         component="img"
         image={image}
         alt="green iguana"
@@ -131,25 +131,20 @@ export default function Projects() {
   }
 
   return (
-    <div className='projects'id="projects">
-      <Card
-        sx={{
-          maxWidth: 775,
-          height: 840,
-          margin: "0 auto",
-          mt: 10,
-          backgroundColor: "transparent",
-          borderRadius: 10,
-          position: "relative",
-        }}
-      >
-        <Typography
-          sx={{ textAlign: "center" }}
-          variant="h4"
-          color="secondary.main"
+    <div className="projects" id="projects">
+      <div className="project-container">
+        <Card
+          sx={{
+            maxWidth: 775,
+            height: 840,
+            margin: "0 auto",
+            mt: 10,
+            backgroundColor: "transparent",
+            borderRadius: 10,
+            position: "relative",
+          }}
         >
           {projectName}
-        </Typography>
         <Carousel>{images}</Carousel>
           <Card
             sx={{

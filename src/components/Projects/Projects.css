@@ -3,15 +3,21 @@
 }
 
 .nextBtn {
-    margin-top: -650px;
-    margin-left: 1500px;
-   text-align: center;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  
 }
 
 .previousBtn {
-    margin-top: -185px;
-    text-align: center;
-    margin-right: 1500px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
 }
 
 .bio {
@@ -20,5 +26,13 @@
 
 .projects {
     height: 100vh;
-    border: 2px solid red;
+    /* border: 2px solid blueviolet; */
+    
+}
+
+.project-container {
+    height: 90vh;
+    width: 60vw;
+    margin: 0 auto;
+    position: relative;
 }
