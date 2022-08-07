@@ -180,7 +180,7 @@ export default function Projects() {
               bottom: 0,
               height: 250,
               position: "absolute",
-              backgroundColor: "black",
+              backgroundColor: "white",
               opacity: 0.9,
             }}
           >
