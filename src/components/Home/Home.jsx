@@ -11,7 +11,7 @@ import Typewriter from "typewriter-effect";
 import React from "react";
 import { useEffect, useRef } from "react";
 import "./Home.css";
-import photo from "../../photo.jpeg";
+import photo from "../../photo.png";
 import Linkdin from "../../Pictures/Socials/Linkedin.png"
 import Github from "../../Pictures/Socials/Github.png"
 
@@ -19,35 +19,28 @@ export default function Home() {
   return (
     <div className="container" id="home">
       <div className="introText">
-        <Typography
-          sx={{color: "#CCD1D1", mb: "50px" }}
-          className="intro"
-          variant="h1"
-        >
-          {" "}
-          Hey! Thanks for stopping by!
-        </Typography>
-        <Typography sx={{ mb: "50px" }} className="text" variant="h1">
-          {" "}
-          My name is{" "}
-          <Typography className="name" variant="h1" display="inline">
+        
+          <Typography className="name" variant="h1">
             {" "}
-            Ishan Khosla{" "}
+            Ishan Khosla.{" "}
           </Typography>{" "}
-        </Typography>
         <Typography className="text" variant="h1">
           <Typewriter
             options={{
               loop: true,
-              strings: ["Programmer.", "Web Developer."],
+              strings: ["Full-Stack Developer.", "Programmer.", "Web Developer."],
               autoStart: true,
             }}
           />
         </Typography>
+        <div className="contactme-homepage">
+        <Button sx={{fontSize: 30}} variant='outlined' color='secondary' href='#contact'>Contact Me</Button>
+        </div>
       </div>
       <div className="profileImg">
         <img className="photo" src={photo}></img>
       </div>
+
       <div className="socials">
             <div className="Linkedin">
               <img src={Linkdin}></img>

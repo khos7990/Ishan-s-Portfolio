@@ -1,5 +1,5 @@
 .title {
-    color: rgb(233, 158, 18);
+    color:#deb992;
 }
 
 .nextBtn {
@@ -26,7 +26,6 @@
 
 .projects {
     height: 100vh;
-    /* border: 2px solid blueviolet; */
     
 }
 

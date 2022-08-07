@@ -1,11 +1,11 @@
 .logo {
     font-size: 10px;
-    color: orange;
+    color: #deb992;
 }
 
 .navtext:hover {
     text-decoration: underline;
-    text-decoration-color: rgb(233, 158, 18);
+    text-decoration-color: #deb992;
 
 }
 
