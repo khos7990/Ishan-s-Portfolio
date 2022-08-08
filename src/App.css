@@ -57,3 +57,15 @@
     z-index: -1;
 }
 
+
+/* :root {
+    --fs-xl: ;
+    --fs-l: 300px;
+    --fs-200: 200px;
+    --fs-100: 100px;
+}
+
+.text {
+    color: #000000;
+    font-size: var(--fs-l);
+} */
