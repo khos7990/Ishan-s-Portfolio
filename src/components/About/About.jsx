@@ -1,4 +1,4 @@
-import { Button, Typography } from "@mui/material";
+import { Button, Typography, useTheme, useMediaQuery } from "@mui/material";
 import React from "react";
 import Resume from '../../Resume/Resume.pdf'
 import ResumeScreenshot from '../../Resume/Resume-screenshot.png'
@@ -6,6 +6,8 @@ import photo from "../../photo.png";
 import "./About.css";
 
 export default function Education() {
+  const theme = useTheme()
+  const screenSize = useMediaQuery(theme.breakpoints.down('md'))
   const icons = [
     require("../../Pictures/Skills/HTML.png"),
     require("../../Pictures/Skills/CSS.png"),
@@ -34,22 +36,23 @@ export default function Education() {
         <img className="photo" src={photo}></img>
       </div>
         <Typography variant='h4' className='text' sx={{textAlign: 'center', fontWeight: 'bold'}}>About Me</Typography>
-        <Typography className='text' variant='h5' sx={{wordSpacing: 10}}>Hey, my name is Ishan and i'm happy you've came to visit my site.  I am doing what I enjoy which is creating projects, and solving challenges. In my free time, I enjoy the outdoors by walking, or playing sports, as well as
-          lifing weights as I am a daily gym goer. Music has always been a passion of mine as well. With whatever task that I am doing, I probably am listening to music in the background,
-          it's what keeps me going...Besides listening to music, I also like creating music using softwares such as Fl studio. As you see my hobbies also reflect my passion towards programming, as 
-          weightlifting brings out my push for challenges, and music production enables my creativiness.
+        <Typography className='text aboutme-text' sx={{fontSize: {lg: '30px', md: '20px', sm: '20px', xs: '20px'}, wordSpacing: {lg: 10, md: 5, sm: 5, xs: 5}}} variant='h5'>Hey, my name is Ishan and i'm happy you've came to visit my site.  I am doing what I enjoy which is creating projects, and solving challenges. 
         </Typography>
 
         </div>
       <div className="technologies">
      
-      <div className="title"><Typography sx={{fontSize: 50}} variant="h1" color='secondary.main'>My Skills</Typography></div>
+      <div className="title"><Typography sx={{fontSize: {lg: '50px', md: '50px', sm: '60px', xs: '40px'}, variant: {lg: 'h1', md: 'h1', sm: 'h2', xs: 'h2'}}}  color='secondary.main'>My Skills</Typography></div>
      
       <div className="icon-container"> {displayIcons} </div>
       
       </div>
       
       <div className="resume-container">
+        {screenSize ?  <a href={Resume} download={Resume}>
+          <Button className='resumeBtn' sx={{fontSize: '25px', color: 'secondary.main', position: 'absolute', width: '60vw', border: '2px solid #000000'}} variant="outlined" >Click Here to download Resume</Button>
+        </a> : 
+          <>
         <Typography variant='h3' color='secondary.main' sx={{textAlign: 'center'}}>My Resume</Typography>
         <div className="resume">
         <img className="resumepic" src={ResumeScreenshot}></img>
@@ -57,6 +60,8 @@ export default function Education() {
         <a href={Resume} download={Resume}>
           <Button sx={{fontSize: 48, color: 'secondary.main', position: 'absolute', bottom: 0 }} variant="outlined" >Click Here to download Resume</Button>
         </a>
+        </>
+          }
       </div>
     </div>
   );

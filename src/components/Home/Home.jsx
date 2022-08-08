@@ -6,7 +6,6 @@ import {
   Typography,
   Button,
   Link,
-  useTheme
   
 } from "@mui/material";
 import Typewriter from "typewriter-effect";
@@ -18,7 +17,7 @@ import Linkdin from "../../Pictures/Socials/Linkedin.png"
 import Github from "../../Pictures/Socials/Github.png"
 
 export default function Home() {
-  const theme = useTheme()
+
   
 
   return (

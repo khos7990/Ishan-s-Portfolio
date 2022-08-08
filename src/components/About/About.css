@@ -78,3 +78,65 @@
     border-radius: 350px;
   
 }
+
+@media (max-width: 600px ) {
+    .about {
+        border: 2px solid red;
+        margin: 0 auto;
+        margin-top: 10px;
+        width: 60vw;
+        height: 47vh;
+    }
+
+    .profileImg {
+        border: 2px solid brown;
+        width: 50vw;
+    }
+
+    .resume-container {
+        border: 2px solid green;
+        height: 11vh;
+        top: 46%;
+        width: 100vw;
+        margin: 0 auto;
+
+
+    }
+
+    .resumeBtn {
+       width: 100vw;
+    }
+
+    .title {
+        border: 2px solid orange;
+        margin-top: -50px;
+        width: 100vw;
+    }
+    
+    .technologies {
+        border: 2px solid blue;
+        height: 30vh;
+        width: 100vw;
+        margin: 0;
+    }
+
+    .icon-container {
+        width: 100vw;
+        border: 2px solid purple;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    .icon-image {
+        border: 2px solid purple;
+        width: 60px;
+    }
+    .icon {
+        border: 2px solid black;
+        bottom: 0;
+        width: 65px;
+        height: 60px;
+    }
+  
+
+}
