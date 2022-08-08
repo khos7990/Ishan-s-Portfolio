@@ -95,7 +95,7 @@ export default function Projects() {
         backgroundColor: "primary.main",
         height: 500,
         backgroundColor: "transparent",
-        border: "2px solid yellow",
+        boxShadow: 10
       }}
     >
       <CardMedia
@@ -163,15 +163,16 @@ export default function Projects() {
         <Card
           sx={{
             maxWidth: 775,
-            height: 840,
+            height: 860,
             margin: "0 auto",
             mt: 10,
             backgroundColor: "transparent",
             borderRadius: 10,
             position: "relative",
+            boxShadow: 10
           }}
         >
-          {projectName}
+          <Typography variant='h2' sx={{textAlign: 'center', color: 'primary.main'}}>{projectName}</Typography>
           <Carousel>{images}</Carousel>
           <Card
             sx={{
