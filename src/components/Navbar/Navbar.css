@@ -1,14 +1,13 @@
 .logo {
-    font-size: 10px;
-    color: 'secondary.main'
+  font-size: 10px;
+  color: "secondary.main";
 }
 
 .navtext:hover {
-    text-decoration: underline;
-    text-decoration-color: #1BA098;
-
+  text-decoration: underline;
+  text-decoration-color: #1ba098;
 }
 
 .navbar-link {
-    text-decoration: none;
+  text-decoration: none;
 }

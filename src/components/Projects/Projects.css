@@ -1,74 +1,55 @@
 .title {
-    color:#deb992;
+  color: #deb992;
 }
 
 .nextBtn {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .previousBtn {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .bio {
-    margin-top: 900px;
+  margin-top: 900px;
 }
 
 .projects {
-    height: 100vh;
-    
+  height: 100vh;
 }
 
 .project-container {
-    height: 90vh;
-    width: 80vw;
-    margin: 0 auto;
-    position: relative;
+  height: 90vh;
+  width: 80vw;
+  margin: 0 auto;
+  position: relative;
 }
 
-
-@media (max-width: 600px ) {
-.project-container {
-
+@media (max-width: 600px) {
+  .project-container {
     width: 95vw;
     height: 58vh;
-    border: 2px solid orange;
-}
+  }
 
-.projects {
- height: 110vh;
-}
+  .projects {
+    height: 110vh;
+  }
 
-.cardImage {
- 
-}
-
-.cardMedia {
-
-}
-
-.cardContent {
-    
-}
-
-.nextBtn {
+  .nextBtn {
     margin-top: 200px;
     height: 50px;
-}
+  }
 
-.previousBtn {
+  .previousBtn {
     margin-top: 200px;
     height: 50px;
-
-}
+  }
 }

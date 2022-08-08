@@ -1,9 +1,25 @@
-.contact-form {
-    margin-left: 20px;
-    width: 550px;
-    margin: 0 auto;
+.contact-container {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
-.contact-container {
-    height: 80vh;
+.contact-form {
+  width: 550px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@media (max-width: 600px) {
+  .contact-container {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .contact-form {
+    width: 400px;
+  }
 }

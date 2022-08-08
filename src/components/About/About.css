@@ -1,142 +1,122 @@
 .skill-container {
-    position: relative;
-    display: flex;
-    height: 100vh;
+  position: relative;
+  display: flex;
+  height: 100vh;
 }
 
-
 .icon-container {
-    height: 30vh;
-    width: 45vw;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-
+  height: 30vh;
+  width: 45vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 .icon {
-    height: 15vh;
-    width: 7vw;
-
+  height: 15vh;
+  width: 7vw;
 }
 
 .resume-container {
-    width: 40vw;
-    height: 90vh;
-    margin-top: 100px;
-    position: absolute;
-    right: 0;
+  width: 40vw;
+  height: 90vh;
+  margin-top: 100px;
+  position: absolute;
+  right: 0;
 }
 
 .resume {
-
-    height: 65vh;
-    text-align: center;
-    
+  height: 65vh;
+  text-align: center;
 }
 
 .resumepic {
-    height: 65vh;
-    width: 30vw;
+  height: 65vh;
+  width: 30vw;
 }
 
 .about {
-    width: 50vw;
-    height: 50vh;
-    margin-top: 140px;
-    margin-left: 50px;
+  width: 50vw;
+  height: 50vh;
+  margin-top: 140px;
+  margin-left: 50px;
 }
 
 .title {
-
-    height: 5vh;
-    margin: 0;
-    text-align: center;
+  height: 5vh;
+  margin: 0;
+  text-align: center;
 }
 
-
 .technologies {
-
-    height: 35vh;
-    width: 45vw;
-    position: absolute;
-    bottom: 0;
-    margin-left: 30px;
-
+  height: 35vh;
+  width: 45vw;
+  position: absolute;
+  bottom: 0;
+  margin-left: 30px;
 }
 
 .profileImg {
-    height: 200px;
-    width: 10vw;
-    margin: 0 auto;
-
+  height: 200px;
+  width: 10vw;
+  margin: 0 auto;
 }
 
 .photo {
-    height: 200px;
-    position: absolute;
-    border-radius: 350px;
-  
+  height: 200px;
+  position: absolute;
+  border-radius: 350px;
 }
 
-@media (max-width: 600px ) {
-    .about {
-        border: 2px solid red;
-        margin: 0 auto;
-        margin-top: 10px;
-        width: 60vw;
-        height: 47vh;
-    }
+@media (max-width: 600px) {
+  .about {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 60vw;
+    height: 47vh;
+  }
 
-    .profileImg {
-        border: 2px solid brown;
-        width: 50vw;
-    }
+  .profileImg {
+    width: 50vw;
+  }
 
-    .resume-container {
-        border: 2px solid green;
-        height: 17vh;
-        top: 46%;
-        width: 100vw;
-        margin: 0 auto;
+  .resume-container {
+    height: 17vh;
+    top: 46%;
+    width: 100vw;
+    margin: 0 auto;
+  }
 
+  .resumeBtn {
+    width: 100vw;
+  }
 
-    }
+  .title {
+    margin-top: -50px;
+    width: 100vw;
+  }
 
-    .resumeBtn {
-       width: 100vw;
-    }
+  .technologies {
+    height: 30vh;
+    width: 100vw;
+    margin: 0;
+  }
 
-    .title {
-        border: 2px solid orange;
-        margin-top: -50px;
-        width: 100vw;
-    }
-    
-    .technologies {
-        border: 2px solid blue;
-        height: 30vh;
-        width: 100vw;
-        margin: 0;
-    }
+  .icon-container {
+    width: 95vw;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 20px;
+    height: 15vh;
+  }
 
-    .icon-container {
-        width: 100vw;
-        border: 2px solid purple;
-        position: relative;
-        margin-top: 20px;
-    }
-
-    .icon-image {
-        border: 2px solid purple;
-        width: 60px;
-    }
-    .icon {
-        border: 2px solid black;
-        bottom: 0;
-        width: 65px;
-        height: 60px;
-    }
-  
-
+  .icon-image {
+    width: 60px;
+  }
+  .icon {
+    bottom: 0;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+  }
 }
