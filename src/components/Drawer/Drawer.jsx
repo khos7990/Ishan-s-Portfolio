@@ -28,10 +28,10 @@ export default function Drawer() {
                 <Link onClick={() => setmenuBar(false)} to="home" spy={true} smooth={true} offset={-200} duration={500} className="navbar-link"><Typography className='navtext' variant="h3"style={{fontSize: 35, letterSpacing: 2, color:"#17202A"}}>Home</Typography> </Link>
                 </ListItem>
                 <ListItem>
-                <Link onClick={() => setmenuBar(false)} to="about" spy={true} smooth={true} offset={25} duration={500}className="navbar-link"><Typography className='navtext' variant="h3" style={{fontSize: 35, letterSpacing: 2, color:"#17202A"}}>About</Typography></Link>
+                <Link onClick={() => setmenuBar(false)} to="about" spy={true} smooth={true} offset={-60} duration={500}className="navbar-link"><Typography className='navtext' variant="h3" style={{fontSize: 35, letterSpacing: 2, color:"#17202A"}}>About</Typography></Link>
                 </ListItem>
                 <ListItem>
-                <Link onClick={() => setmenuBar(false)} to="projects" spy={true} smooth={true} offset={-120} duration={500} className="navbar-link"><Typography className='navtext' variant="h3" style={{fontSize: 35, letterSpacing: 2, color:"#17202A"}}>Projects</Typography></Link>
+                <Link onClick={() => setmenuBar(false)} to="projects" spy={true} smooth={true} offset={-10} duration={500} className="navbar-link"><Typography className='navtext' variant="h3" style={{fontSize: 35, letterSpacing: 2, color:"#17202A"}}>Projects</Typography></Link>
                 </ListItem>
                 <ListItem>
                 <Link onClick={() => setmenuBar(false)} to="contact" spy={true} smooth={true} offset={50} duration={500} className="navbar-link"><Typography className='navtext' variant="h3" style={{fontSize: 35, letterSpacing: 2, color:"#17202A"}}>Contact Me</Typography></Link> 

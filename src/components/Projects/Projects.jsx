@@ -89,17 +89,17 @@ export default function Projects() {
   const [showPrevIcon, setshowPrevIcon] = useState(false);
 
   const images = projectImages.map((image) => (
-    <Card
+    <Card className="cardImage"
       sx={{
         maxWidth: 1250,
         backgroundColor: "primary.main",
-        height: 500,
+        height: {lg: 440, xs: 290},
         backgroundColor: "transparent",
-        boxShadow: 10
+        boxShadow: 10,
       }}
     >
-      <CardMedia
-        sx={{ objectFit: "scale-down", height: 500 }}
+      <CardMedia className="cardMedia"
+        sx={{ objectFit: "scale-down", height: {lg: 420, xs: 290 }  }}
         component="img"
         image={image}
         alt="green iguana"
@@ -163,29 +163,29 @@ export default function Projects() {
         <Card
           sx={{
             maxWidth: 775,
-            height: 860,
+            height: 780,
+            top: 48,
             margin: "0 auto",
-            mt: 10,
             backgroundColor: "transparent",
             borderRadius: 10,
             position: "relative",
-            boxShadow: 10
+            boxShadow: 10,
           }}
         >
-          <Typography variant='h2' sx={{textAlign: 'center', color: 'primary.main'}}>{projectName}</Typography>
+          <Typography variant='h3' sx={{textAlign: 'center', color: 'primary.main'}}>{projectName}</Typography>
           <Carousel>{images}</Carousel>
           <Card
             sx={{
               maxWidth: 1250,
               margin: "0 auto",
               bottom: 0,
-              height: 250,
+              height: {lg: 250, xs: 360},
               position: "absolute",
               backgroundColor: "white",
               opacity: 0.9,
             }}
           >
-            <CardContent sx={{ width: 750, height: 140 }}>
+            <CardContent className='cardContent' sx={{ width: {lg: 750, xs: 360}, height: {lg: 140, xs: 320}}}>
               <Button
                 sx={{ marginRight: 3 }}
                 variant="outlined"
@@ -197,7 +197,7 @@ export default function Projects() {
               <Button variant="outlined" color="secondary" href={code}>
                 Code
               </Button>
-              <Typography mt="5px" fontSize="20px" color="secondary.main">
+              <Typography mt="5px" sx={{fontSize: {lg: '20px', xs: '16px'}}} color="secondary.main">
                 {" "}
                 {projectDescription}
               </Typography>
@@ -209,7 +209,7 @@ export default function Projects() {
             <ToggleButton>
               <ArrowForwardIosIcon
                 onClick={nextBtn}
-                sx={{ color: "secondary.main", fontSize: "10rem" }}
+                sx={{ color: "secondary.main", fontSize: {lg: "10rem", xs: "3rem" }}}
               />
             </ToggleButton>
           ) : null}
@@ -219,7 +219,7 @@ export default function Projects() {
             <ToggleButton>
               <ArrowBackIosNewIcon
                 onClick={prevBtn}
-                sx={{ color: "secondary.main", fontSize: "10rem" }}
+                sx={{ color: "secondary.main", fontSize: {lg: "10rem", xs: "3rem" }}}
               />
             </ToggleButton>
           ) : null}

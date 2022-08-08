@@ -31,7 +31,44 @@
 
 .project-container {
     height: 90vh;
-    width: 60vw;
+    width: 80vw;
     margin: 0 auto;
     position: relative;
+}
+
+
+@media (max-width: 600px ) {
+.project-container {
+
+    width: 95vw;
+    height: 58vh;
+    border: 2px solid orange;
+}
+
+.projects {
+ height: 110vh;
+}
+
+.cardImage {
+ 
+}
+
+.cardMedia {
+
+}
+
+.cardContent {
+    
+}
+
+.nextBtn {
+    margin-top: 200px;
+    height: 50px;
+}
+
+.previousBtn {
+    margin-top: 200px;
+    height: 50px;
+
+}
 }

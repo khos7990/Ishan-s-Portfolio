@@ -50,7 +50,7 @@ export default function Education() {
       
       <div className="resume-container">
         {screenSize ?  <a href={Resume} download={Resume}>
-          <Button className='resumeBtn' sx={{fontSize: '25px', color: 'secondary.main', position: 'absolute', width: '60vw', border: '2px solid #000000'}} variant="outlined" >Click Here to download Resume</Button>
+          <Button className='resumeBtn' sx={{mt: '20px', fontSize: '20px', color: 'secondary.main', position: 'absolute', width: '60vw', border: '2px solid #000000', left: '20%'}} variant="outlined" >Click Here to download Resume</Button>
         </a> : 
           <>
         <Typography variant='h3' color='secondary.main' sx={{textAlign: 'center'}}>My Resume</Typography>
