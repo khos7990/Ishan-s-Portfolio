@@ -10,25 +10,40 @@
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
+  margin-top: 20px;
 }
 
 .icon {
   height: 15vh;
   width: 7vw;
+  text-align: center;
+}
+
+.icon-image {
+  width: 100px
 }
 
 .resume-container {
   width: 40vw;
-  height: 90vh;
+  height: 85vh;
   margin-top: 100px;
-  position: absolute;
-  right: 0;
+  margin-left: 30px;
+  align-self: flex-end;
+  position: relative;
+  text-align: center;
 }
 
 .resume {
   height: 65vh;
   text-align: center;
+
 }
+
+.resumeAtag {
+
+  height: 13vh;
+}
+
 
 .resumepic {
   height: 65vh;
@@ -85,10 +100,12 @@
     top: 46%;
     width: 100vw;
     margin: 0 auto;
+
   }
 
   .resumeBtn {
     width: 100vw;
+
   }
 
   .title {
@@ -119,4 +136,51 @@
     height: 60px;
     margin: 0 auto;
   }
+}
+
+@media (max-width: 1350px) {
+.skill-container {
+  border: 2px solid black;
+  height: 90vh;
+}
+
+.about {
+  margin-top: 40px;
+  height: 400px;
+}
+
+.profileImg {
+  width: 210px;
+}
+
+.technologies {
+  margin-bottom: 50px;
+  width: 610px;
+  margin-left: 50px;
+}
+
+.icon-container {
+  height: 220px;
+  position: absolute;
+  bottom: 0;
+}
+
+.icon-image {
+  width: 100px;
+}
+
+.resume-container {
+  margin-top: 40px;
+  width: 600px;
+  position: relative;
+
+}
+
+.resume {
+  width: 600px;
+}
+
+.resumeBtn {
+  margin: 0 auto;
+}
 }

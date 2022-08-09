@@ -94,14 +94,14 @@ export default function Projects() {
       sx={{
         maxWidth: 1250,
         backgroundColor: "primary.main",
-        height: { lg: 440, xs: 290 },
+        height: { xl: 440,lg: 420, xs: 290 },
         backgroundColor: "transparent",
         boxShadow: 10,
       }}
     >
       <CardMedia
         className="cardMedia"
-        sx={{ objectFit: "scale-down", height: { lg: 420, xs: 290 } }}
+        sx={{ objectFit: "scale-down", height: { xl: 420, lg: 400, xs: 290 } }}
         component="img"
         image={image}
         alt="green iguana"
@@ -161,10 +161,10 @@ export default function Projects() {
   return (
     <div className="projects" id="projects">
       <div className="project-container">
-        <Card
+        <Card className="project-card"
           sx={{
             maxWidth: 775,
-            height: 830,
+            height: {xl: 830, lg: 760 },
             top: 48,
             margin: "0 auto",
             backgroundColor: "transparent",
@@ -175,7 +175,7 @@ export default function Projects() {
         >
           <Typography
             variant="h3"
-            sx={{ textAlign: "center", color: "primary.main" }}
+            sx={{ textAlign: "center", color: "primary.main", fontSize: {lg: "30px"} }}
           >
             {projectName}
           </Typography>
@@ -185,7 +185,7 @@ export default function Projects() {
               maxWidth: 1250,
               margin: "0 auto",
               bottom: 0,
-              height: { lg: 250, xs: 360 },
+              height: { xl: 250, lg: 270, xs: 360 },
               position: "absolute",
               backgroundColor: "white",
               opacity: 0.9,
@@ -193,7 +193,7 @@ export default function Projects() {
           >
             <CardContent
               className="cardContent"
-              sx={{ width: { lg: 750, xs: 360 }, height: { lg: 140, xs: 320 } }}
+              sx={{ width: { lg: 750, xs: 360 }, height: { xl: 140, lg: 120, xs: 320 } }}
             >
               <Button
                 sx={{ marginRight: 3 }}

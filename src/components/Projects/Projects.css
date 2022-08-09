@@ -53,3 +53,13 @@
     height: 50px;
   }
 }
+
+@media (max-width: 1350px) {
+  .project-container {
+    width: 90vw;
+  }
+
+
+  
+  
+  }

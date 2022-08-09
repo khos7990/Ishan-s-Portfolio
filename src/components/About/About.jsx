@@ -85,7 +85,7 @@ export default function Education() {
               }}
               variant="outlined"
             >
-              Click Here to download Resume
+              View Resume
             </Button>
           </a>
         ) : (
@@ -100,19 +100,22 @@ export default function Education() {
             <div className="resume">
               <img className="resumepic" src={ResumeScreenshot}></img>
             </div>
+            <div className="resumeAtag" >
             <a href={Resume} download={Resume}>
-              <Button
+              <Button className="ResumeBtn"
                 sx={{
-                  fontSize: 48,
+                  fontSize: 38,
                   color: "secondary.main",
-                  position: "absolute",
+                  position: 'absolute',
                   bottom: 0,
+                  left: 210
                 }}
                 variant="outlined"
               >
-                Click Here to download Resume
+                View Resume
               </Button>
             </a>
+            </div>
           </>
         )}
       </div>

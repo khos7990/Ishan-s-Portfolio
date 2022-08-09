@@ -52,20 +52,19 @@
     top: 40%;
   }
   .socials {
-    margin-top: 420px;
-    left: 0;
-    position: absolute;
+    top: 130px;
 
   }
 
   .container {
     height: 100vh;
     position: relative;
+    border: 2px solid green;
 
   }
 
   .contactme-homepage {
-    bottom: -10%;
+    bottom: 10%;
   }
 
   .LinkedinImg {
@@ -75,6 +74,7 @@
   .GithubImg {
     width: 80px;
   }
+
 }
 
 @media (max-width: 1350px) {
