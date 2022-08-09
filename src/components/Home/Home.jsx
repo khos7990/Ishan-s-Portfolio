@@ -31,7 +31,7 @@ export default function Home() {
         </Typography>{" "}
         <Typography
           className="text"
-          sx={{ fontSize: { lg: "100px", md: "75px", sm: "60px", xs: "38px" } }}
+          sx={{ fontSize: { lg: "100px", md: "75px", sm: "60px", xs: "35px" } }}
           fontWeight="300"
         >
           <Typewriter
@@ -69,7 +69,7 @@ export default function Home() {
 
       <div className="socials">
         <div className="Linkedin">
-          <img src={Linkdin}></img>
+          <img className="LinkedinImg" src={Linkdin}></img>
           <Link
             sx={{ color: "secondary.main", textDecoration: "none" }}
             href="https://www.linkedin.com/in/ishan-khosla-9b2615186/"
@@ -85,7 +85,7 @@ export default function Home() {
           </Link>
         </div>
         <div className="Github">
-          <img src={Github}></img>
+          <img className="GithubImg" src={Github}></img>
           <Link
             sx={{ color: "secondary.main", textDecoration: "none" }}
             href="https://github.com/khos7990"

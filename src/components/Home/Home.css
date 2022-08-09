@@ -52,17 +52,40 @@
     top: 40%;
   }
   .socials {
-    margin-top: 510px;
+    margin-top: 420px;
     left: 0;
     position: absolute;
+
   }
 
   .container {
     height: 100vh;
     position: relative;
+
   }
 
   .contactme-homepage {
-    bottom: 10%;
+    bottom: -10%;
   }
+
+  .LinkedinImg {
+    width: 80px;
+  }
+
+  .GithubImg {
+    width: 80px;
+  }
+}
+
+@media (max-width: 1350px) {
+
+
+.socials {
+  margin-top: 550px;
+  right: 0;
+  position: absolute;
+  height: 200px;
+}
+
+
 }
