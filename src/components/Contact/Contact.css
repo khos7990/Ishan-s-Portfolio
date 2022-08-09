@@ -17,7 +17,7 @@
   .contact-container {
     width: 100vw;
     margin: 0 auto;
-    border: 2px solid red;
+    margin-top: 70px;
   }
 
   .contact-form {
