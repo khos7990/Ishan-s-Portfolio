@@ -35,31 +35,41 @@
 
 @media (max-width: 600px) {
   .project-container {
-    width: 95vw;
-    height: 58vh;
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid black;
+    text-align: center;
   }
 
   .projects {
-    height: 110vh;
+    height: 100vh;
+    text-align: center;
+    width: 100vw;
+  }
+
+  .project-card {
+    border: 2px solid green;
   }
 
   .nextBtn {
-    margin-top: 200px;
+    margin-top: -70px;
+    margin-right: 0px;
     height: 50px;
   }
 
   .previousBtn {
-    margin-top: 200px;
+    margin-top: -70px;
+    margin-left: 0px;
     height: 50px;
   }
 }
 
-@media (max-width: 1350px) {
+/* @media (max-width: 1350px) {
   .project-container {
     width: 90vw;
-  }
+  } */
 
 
   
   
-  }
+

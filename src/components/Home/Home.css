@@ -52,14 +52,14 @@
     top: 40%;
   }
   .socials {
-    top: 130px;
+    left: 0;
+    top: 70px;
 
   }
 
   .container {
     height: 100vh;
     position: relative;
-    border: 2px solid green;
 
   }
 

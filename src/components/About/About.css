@@ -85,10 +85,15 @@
 
 @media (max-width: 600px) {
   .about {
+    height: 0vh;
+    width: 100vw;
     margin: 0 auto;
-    margin-top: 10px;
-    width: 60vw;
-    height: 47vh;
+  }
+
+  .aboutme-text {
+    text-align: center;
+    width: 100vw;
+    height: 20vh;
   }
 
   .profileImg {
@@ -96,11 +101,15 @@
   }
 
   .resume-container {
-    height: 17vh;
-    top: 46%;
-    width: 100vw;
-    margin: 0 auto;
+ position: absolute;
+ width: 100vw;
+ height: 50vh;
+ margin: 0 auto;
 
+  }
+
+  .resume-a {
+    text-decoration: none;
   }
 
   .resumeBtn {
@@ -109,19 +118,19 @@
   }
 
   .title {
-    margin-top: -50px;
     width: 100vw;
   }
 
   .technologies {
     height: 30vh;
     width: 100vw;
-    margin: 0;
+    margin-left: 0px;
+    margin-bottom: 20px;
+
   }
 
   .icon-container {
-    width: 95vw;
-    margin: 0 auto;
+    width: 100vw;
     position: relative;
     margin-top: 20px;
     height: 15vh;
@@ -136,17 +145,22 @@
     height: 60px;
     margin: 0 auto;
   }
+
+.skill-container {
+  height: 100vh;
+  width: 100vw;
+}
 }
 
-@media (max-width: 1350px) {
+/* @media (max-width: 1350px) {
 .skill-container {
-  border: 2px solid black;
   height: 90vh;
 }
 
 .about {
   margin-top: 40px;
   height: 400px;
+  width: 100vw;
 }
 
 .profileImg {
@@ -156,7 +170,6 @@
 .technologies {
   margin-bottom: 50px;
   width: 610px;
-  margin-left: 50px;
 }
 
 .icon-container {
@@ -183,4 +196,4 @@
 .resumeBtn {
   margin: 0 auto;
 }
-}
+} */

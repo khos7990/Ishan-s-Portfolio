@@ -163,9 +163,9 @@ export default function Projects() {
       <div className="project-container">
         <Card className="project-card"
           sx={{
-            maxWidth: 775,
-            height: {xl: 830, lg: 760 },
-            top: 48,
+            maxWidth: {xl: 775, lg: 775,xs: 410},
+            height: {xl: 830, lg: 760, xs: 750 },
+            top: {xl: 48, lg: 48, xs: 0},
             margin: "0 auto",
             backgroundColor: "transparent",
             borderRadius: 10,
@@ -185,7 +185,7 @@ export default function Projects() {
               maxWidth: 1250,
               margin: "0 auto",
               bottom: 0,
-              height: { xl: 250, lg: 270, xs: 360 },
+              height: { xl: 250, lg: 270, xs: 340 },
               position: "absolute",
               backgroundColor: "white",
               opacity: 0.9,
@@ -193,7 +193,7 @@ export default function Projects() {
           >
             <CardContent
               className="cardContent"
-              sx={{ width: { lg: 750, xs: 360 }, height: { xl: 140, lg: 120, xs: 320 } }}
+              sx={{ width: { lg: 750, xs: 350 }, height: { xl: 140, lg: 120, xs: 320 } }}
             >
               <Button
                 sx={{ marginRight: 3 }}

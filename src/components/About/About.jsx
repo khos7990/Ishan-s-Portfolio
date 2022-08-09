@@ -44,8 +44,8 @@ export default function Education() {
         <Typography
           className="text aboutme-text"
           sx={{
-            fontSize: { lg: "30px", md: "20px", sm: "20px", xs: "20px" },
-            wordSpacing: { lg: 10, md: 5, sm: 5, xs: 5 },
+            fontSize: { lg: "30px", md: "20px", sm: "20px", xs: "25px" },
+            wordSpacing: { lg: 10, md: 5, sm: 5, xs: 2 },
           }}
           variant="h5"
         >
@@ -71,17 +71,15 @@ export default function Education() {
 
       <div className="resume-container">
         {screenSize ? (
-          <a href={Resume} download={Resume}>
+          <a className="resume-a" href={Resume} download={Resume}>
             <Button
               className="resumeBtn"
               sx={{
-                mt: "20px",
                 fontSize: "20px",
                 color: "secondary.main",
-                position: "absolute",
+                textDecoration: 'none',
                 width: "60vw",
                 border: "2px solid #000000",
-                left: "20%",
               }}
               variant="outlined"
             >
