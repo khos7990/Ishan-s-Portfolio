@@ -81,10 +81,18 @@
 
 
 .socials {
-  margin-top: 550px;
+  margin-top: 450px;
   right: 0;
   position: absolute;
   height: 200px;
+}
+
+.LinkedinImg {
+  width: 100px;
+}
+
+.GithubImg {
+  width: 100px;
 }
 
 

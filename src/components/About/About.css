@@ -160,48 +160,21 @@
 }
 }
 
-/* @media (max-width: 1350px) {
+@media (max-width: 1200px) {
 .skill-container {
-  height: 90vh;
+  border: 2px solid green;
 }
-
-.about {
-  margin-top: 40px;
-  height: 400px;
-  width: 100vw;
-}
-
-.profileImg {
-  width: 210px;
-}
-
-.technologies {
-  margin-bottom: 50px;
-  width: 610px;
-}
-
-.icon-container {
-  height: 220px;
-  position: absolute;
-  bottom: 0;
-}
-
 .icon-image {
-  width: 100px;
+  width: 55px;
 }
 
-.resume-container {
-  margin-top: 40px;
-  width: 600px;
-  position: relative;
-
+.resumepic {
+  display: none;
 }
 
-.resume {
-  width: 600px;
+.resume-title {
+  display: none;
 }
 
-.resumeBtn {
-  margin: 0 auto;
+
 }
-} */
