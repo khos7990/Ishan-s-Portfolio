@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Ishan-s-Portfolio/static/css/main.f223c3b4.css",
-    "main.js": "/Ishan-s-Portfolio/static/js/main.e434b59f.js",
+    "main.css": "/Ishan-s-Portfolio/static/css/main.3778001b.css",
+    "main.js": "/Ishan-s-Portfolio/static/js/main.895dedfb.js",
     "static/media/Home.png": "/Ishan-s-Portfolio/static/media/Home.5b791a58c41e739fec2c.png",
     "static/media/Search.png": "/Ishan-s-Portfolio/static/media/Search.bf49f1da690988bb2af7.png",
     "static/media/Winner.png": "/Ishan-s-Portfolio/static/media/Winner.5a9e9a54cc31d999d7a1.png",
@@ -20,11 +20,11 @@
     "static/media/MYPLANTS.png": "/Ishan-s-Portfolio/static/media/MYPLANTS.21c2848eaab816c67e63.png",
     "static/media/LOGIN.png": "/Ishan-s-Portfolio/static/media/LOGIN.da3ea2e072c37c75e84f.png",
     "index.html": "/Ishan-s-Portfolio/index.html",
-    "main.f223c3b4.css.map": "/Ishan-s-Portfolio/static/css/main.f223c3b4.css.map",
-    "main.e434b59f.js.map": "/Ishan-s-Portfolio/static/js/main.e434b59f.js.map"
+    "main.3778001b.css.map": "/Ishan-s-Portfolio/static/css/main.3778001b.css.map",
+    "main.895dedfb.js.map": "/Ishan-s-Portfolio/static/js/main.895dedfb.js.map"
   },
   "entrypoints": [
-    "static/css/main.f223c3b4.css",
-    "static/js/main.e434b59f.js"
+    "static/css/main.3778001b.css",
+    "static/js/main.895dedfb.js"
   ]
 }
