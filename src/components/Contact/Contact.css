@@ -24,3 +24,10 @@
     width: 90vw;
   }
 }
+
+@media (max-width: 1366px) {
+  .contact-container {
+    margin-top: 150px;
+  }
+
+}

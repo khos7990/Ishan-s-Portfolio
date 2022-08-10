@@ -160,7 +160,7 @@
 }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1350px) {
 .skill-container {
   border: 2px solid green;
 }
@@ -175,6 +175,17 @@
 .resume-title {
   display: none;
 }
+.about {
+margin-top: 0px;
+border: 2px solid orange;
+text-align: center;
+}
+.profileImg {
+  border: 2px solid red;
+  width: 50vw;
+  text-align: center;
+}
+
 
 
 }

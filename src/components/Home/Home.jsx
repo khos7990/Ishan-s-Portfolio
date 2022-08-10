@@ -31,7 +31,7 @@ export default function Home() {
         </Typography>{" "}
         <Typography
           className="text"
-          sx={{ fontSize: { lg: "100px", md: "75px", sm: "60px", xs: "35px" } }}
+          sx={{ fontSize: {lg: "100px", md: "50px", sm: "60px", xs: "35px" } }}
           fontWeight="300"
         >
           <Typewriter

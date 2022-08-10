@@ -92,6 +92,7 @@ export default function Education() {
               variant="h3"
               color="secondary.main"
               sx={{ textAlign: "center" }}
+              className='resume-title'
             >
               My Resume
             </Typography>

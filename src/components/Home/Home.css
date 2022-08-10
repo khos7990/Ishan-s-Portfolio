@@ -80,6 +80,7 @@
 @media (max-width: 1350px) {
 
 
+
 .socials {
   margin-top: 450px;
   right: 0;
@@ -94,6 +95,15 @@
 .GithubImg {
   width: 100px;
 }
+.contactme-homepage {
 
+  margin-bottom: -90px;
+  position: absolute;
+}
+
+.container {
+
+  position: relative;
+}
 
 }
