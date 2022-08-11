@@ -95,7 +95,7 @@ export default function Drawer() {
             to="contact"
             spy={true}
             smooth={true}
-            offset={80}
+            offset={120}
             duration={500}
             className="navbar-link"
           >
