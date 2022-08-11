@@ -97,13 +97,7 @@
   }
 
   .profileImg {
-    width: 33vw;
-    height: 140px;
-  }
-
-  .photo {
-    width: 130px;
-    height: 130px;
+    width: 50vw;
   }
 
   .resume-container {
@@ -111,7 +105,6 @@
  width: 100vw;
  height: 50vh;
  margin: 0 auto;
- margin-bottom: 40px;
 
   }
 
@@ -128,12 +121,11 @@
     width: 100vw;
   }
 
-
   .technologies {
     height: 30vh;
     width: 100vw;
     margin-left: 0px;
-    margin-bottom: 150px;
+    margin-bottom: 20px;
 
   }
 
