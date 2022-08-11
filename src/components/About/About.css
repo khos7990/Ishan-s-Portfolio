@@ -160,32 +160,27 @@
 }
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1200px) {
 .skill-container {
   border: 2px solid green;
 }
+
 .icon-image {
-  width: 55px;
+  width: 100px;
 }
 
-.resumepic {
-  display: none;
-}
-
-.resume-title {
-  display: none;
-}
-.about {
-margin-top: 0px;
-border: 2px solid orange;
-text-align: center;
-}
-.profileImg {
-  border: 2px solid red;
-  width: 50vw;
-  text-align: center;
-}
-
-
+.resume-container {
+  margin-top: 40px;
+  width: 600px;
+  position: relative;
 
 }
+
+.resume {
+  width: 600px;
+}
+
+.resumeBtn {
+  margin: 0 auto;
+}
+} */
