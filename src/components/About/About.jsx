@@ -44,7 +44,7 @@ export default function Education() {
         <Typography
           className="text aboutme-text"
           sx={{
-            fontSize: { lg: "30px", md: "20px", sm: "20px", xs: "25px" },
+            fontSize: { lg: "30px", md: "20px", sm: "20px", xs: "20px" },
             wordSpacing: { lg: 10, md: 5, sm: 5, xs: 2 },
           }}
           variant="h5"

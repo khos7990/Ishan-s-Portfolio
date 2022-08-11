@@ -185,7 +185,8 @@ export default function Projects() {
               maxWidth: 1250,
               margin: "0 auto",
               bottom: 0,
-              height: { xl: 250, lg: 270, xs: 340 },
+              height: { xl: 300, lg: 270, xs: 340 },
+              width: {xl: 1250, xs: 410},
               position: "absolute",
               backgroundColor: "white",
               opacity: 0.9,
@@ -193,10 +194,10 @@ export default function Projects() {
           >
             <CardContent
               className="cardContent"
-              sx={{ width: { lg: 750, xs: 350 }, height: { xl: 140, lg: 120, xs: 320 } }}
+              sx={{ width: { lg: 750, xs: 350 }, height: { xl: 140, lg: 120, xs: 320 }}}
             >
               <Button
-                sx={{ marginRight: 3 }}
+                sx={{ marginRight: 3}}
                 variant="outlined"
                 color="secondary"
                 href={deploymentLink}

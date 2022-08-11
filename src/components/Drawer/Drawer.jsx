@@ -57,7 +57,7 @@ export default function Drawer() {
             to="about"
             spy={true}
             smooth={true}
-            offset={-60}
+            offset={-40}
             duration={500}
             className="navbar-link"
           >

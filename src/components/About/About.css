@@ -110,6 +110,7 @@
 
   .resume-a {
     text-decoration: none;
+
   }
 
   .resumeBtn {
@@ -125,7 +126,7 @@
     height: 30vh;
     width: 100vw;
     margin-left: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 75px;
 
   }
 
@@ -152,27 +153,3 @@
 }
 }
 
-@media (max-width: 1200px) {
-.skill-container {
-  border: 2px solid green;
-}
-
-.icon-image {
-  width: 100px;
-}
-
-.resume-container {
-  margin-top: 40px;
-  width: 600px;
-  position: relative;
-
-}
-
-.resume {
-  width: 600px;
-}
-
-.resumeBtn {
-  margin: 0 auto;
-}
-} 
