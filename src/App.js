@@ -19,6 +19,15 @@ const theme = createTheme({
       main: "#000000",
     },
   },
+  breakpoints: {
+    values: {
+      mobile: 0,
+      tablet: 640,
+      navbar: 850,
+      laptop: 1024,
+      desktop: 1200
+    }
+  }
 });
 
 export default function App() {

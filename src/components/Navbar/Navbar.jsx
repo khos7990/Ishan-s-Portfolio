@@ -14,7 +14,7 @@ import "./Navbar.css";
 
 export default function Nav() {
   const theme = useTheme();
-  const screenSize = useMediaQuery(theme.breakpoints.down("md"));
+  const screenSize = useMediaQuery(theme.breakpoints.down("navbar"));
 
   return (
     <div>
