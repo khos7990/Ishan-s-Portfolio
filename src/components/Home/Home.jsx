@@ -21,8 +21,18 @@ export default function Home() {
       <div className="introText">
         <Typography
           sx={{
-            fontSize: { desktop: "150px", laptop: "100px", tablet: "75px", mobile: "70px" }, border: { desktop: '2px solid orange', laptop: '2px solid red', tablet: '2px solid green', mobile: '2px solid blue'},
-            fontWeight: {desktop: "510", laptop: "510", tablet: "510", mobile: "510"}
+            fontSize: {
+              desktop: "150px",
+              laptop: "100px",
+              tablet: "75px",
+              mobile: "70px",
+            },
+            fontWeight: {
+              desktop: "510",
+              laptop: "510",
+              tablet: "510",
+              mobile: "510",
+            },
           }}
           className="name"
         >
@@ -31,7 +41,14 @@ export default function Home() {
         </Typography>{" "}
         <Typography
           className="text"
-          sx={{ fontSize: {desktop: "100px", laptop: "50px", tablet: "60px", mobile: "35px" } }}
+          sx={{
+            fontSize: {
+              desktop: "100px",
+              laptop: "50px",
+              tablet: "60px",
+              mobile: "35px",
+            },
+          }}
           fontWeight="300"
         >
           <Typewriter
@@ -49,7 +66,12 @@ export default function Home() {
         <div className="home-about">
           <Typography
             sx={{
-              fontSize: { desktop: "30px", laptop: "20px", tablet: "20px", mobile: "20px" },
+              fontSize: {
+                desktop: "30px",
+                laptop: "20px",
+                tablet: "20px",
+                mobile: "20px",
+              },
             }}
           >
             I am a full-stack developer based out of Toronto, ON, Canada.
@@ -76,8 +98,18 @@ export default function Home() {
           >
             <Typography
               sx={{
-                fontSize: { desktop: "30px", laptop: "20px", tablet: "20px", mobile: "20px" },
-                variant: { desktop: "h3", laptop: "h4", tablet: "h4", mobile: "h4" },
+                fontSize: {
+                  desktop: "30px",
+                  laptop: "20px",
+                  tablet: "20px",
+                  mobile: "20px",
+                },
+                variant: {
+                  desktop: "h3",
+                  laptop: "h4",
+                  tablet: "h4",
+                  mobile: "h4",
+                },
               }}
             >
               Linkedin
@@ -92,8 +124,18 @@ export default function Home() {
           >
             <Typography
               sx={{
-                fontSize: { desktop: "30px", laptop: "20px", tablet: "20px", mobile: "20px" },
-                variant: { desktop: "h3", laptop: "h4", tablet: "h4", mobile: "h4" },
+                fontSize: {
+                  desktop: "30px",
+                  laptop: "20px",
+                  tablet: "20px",
+                  mobile: "20px",
+                },
+                variant: {
+                  desktop: "h3",
+                  laptop: "h4",
+                  tablet: "h4",
+                  mobile: "h4",
+                },
               }}
             >
               Github

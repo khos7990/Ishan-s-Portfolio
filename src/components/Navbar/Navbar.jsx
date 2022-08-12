@@ -53,7 +53,7 @@ export default function Nav() {
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={25}
+                offset={10}
                 duration={500}
                 className="navbar-link"
               >
@@ -69,7 +69,7 @@ export default function Nav() {
                 to="projects"
                 spy={true}
                 smooth={true}
-                offset={-25}
+                offset={-55}
                 duration={500}
                 className="navbar-link"
               >
@@ -85,7 +85,7 @@ export default function Nav() {
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={50}
+                offset={-40}
                 duration={500}
                 className="navbar-link"
               >

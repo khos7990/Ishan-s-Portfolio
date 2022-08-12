@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   height: 100vh;
+  margin-bottom: 150px;
 }
 
 .icon-container {
@@ -20,30 +21,29 @@
 }
 
 .icon-image {
-  width: 100px
+  width: 100px;
 }
 
 .resume-container {
   width: 40vw;
-  height: 85vh;
-  margin-top: 100px;
+  height: 94vh;
+  margin-top: 50px;
   margin-left: 30px;
-  align-self: flex-end;
   position: relative;
   text-align: center;
 }
 
 .resume {
   height: 65vh;
-  text-align: center;
-
 }
 
 .resumeAtag {
-
+  position: absolute;
+  width: 40vw;
+  bottom: 0;
   height: 13vh;
+  display: flex;
 }
-
 
 .resumepic {
   height: 65vh;
@@ -53,8 +53,12 @@
 .about {
   width: 50vw;
   height: 50vh;
-  margin-top: 140px;
+  margin-top: 50px;
   margin-left: 50px;
+  text-align: center;
+}
+.aboutme-text {
+  text-align: center;
 }
 
 .title {
@@ -68,13 +72,14 @@
   width: 45vw;
   position: absolute;
   bottom: 0;
-  margin-left: 30px;
+  margin-left: 50px;
 }
 
 .profileImg {
   height: 200px;
-  width: 10vw;
-  margin: 0 auto;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
 }
 
 .photo {
@@ -83,11 +88,70 @@
   border-radius: 350px;
 }
 
-@media (max-width: 600px) {
+/* laptop */
+/* @media (max-width: 1349.09) {
+.skill-container {
+  height: 95vh;
+  margin-bottom: 100px;
+}
+
+.about {
+  margin-top: 50px;
+}
+
+.aboutme-text {
+  text-align: center;
+}
+.profileImg {
+  width: 50vw;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.photo {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.technologies {
+  bottom: 0;
+  margin-left: 50px;
+}
+
+.resume-container {
+  height: 89vh;
+  margin-top: 50px;
+}
+
+} */
+
+@media (max-width: 1399.09px) {
+  .skill-container {
+    margin-bottom: 150px;
+  }
+}
+
+/*resume hidden */
+@media (max-width: 999.09px) {
+  .resume-container {
+    display: flex;
+    align-items: center;
+  }
+  .icon-image {
+    width: 70px;
+  }
+}
+
+/*mobile */
+@media (max-width: 639.09px) {
   .about {
-    height: 0vh;
+    height: 55vh;
     width: 100vw;
     margin: 0 auto;
+    position: relative;
+    margin-top: 10px;
   }
 
   .aboutme-text {
@@ -97,25 +161,26 @@
   }
 
   .profileImg {
-    width: 50vw;
+    width: 100vw;
+    height: 120px;
+  }
+
+  .photo {
+    height: 120px;
   }
 
   .resume-container {
- position: absolute;
- width: 100vw;
- height: 50vh;
- margin: 0 auto;
-
+    position: absolute;
+    width: 100vw;
+    height: 15vh;
+    margin: 0 auto;
+    bottom: 45%;
+    display: flex;
+    justify-content: center;
   }
 
   .resume-a {
     text-decoration: none;
-
-  }
-
-  .resumeBtn {
-    width: 100vw;
-
   }
 
   .title {
@@ -126,8 +191,7 @@
     height: 30vh;
     width: 100vw;
     margin-left: 0px;
-    margin-bottom: 75px;
-
+    margin-bottom: 100px;
   }
 
   .icon-container {
@@ -147,9 +211,8 @@
     margin: 0 auto;
   }
 
-.skill-container {
-  height: 100vh;
-  width: 100vw;
+  .skill-container {
+    height: 100vh;
+    width: 100vw;
+  }
 }
-}
-

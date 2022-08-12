@@ -94,14 +94,17 @@ export default function Projects() {
       sx={{
         maxWidth: 1250,
         backgroundColor: "primary.main",
-        height: { xl: 440,lg: 420, xs: 290 },
+        height: { desktop: 440, laptop: 350, mobile: 290 },
         backgroundColor: "transparent",
         boxShadow: 10,
       }}
     >
       <CardMedia
         className="cardMedia"
-        sx={{ objectFit: "scale-down", height: { xl: 420, lg: 400, xs: 290 } }}
+        sx={{
+          objectFit: "scale-down",
+          height: { desktop: 440, laptop: 350, mobile: 290 },
+        }}
         component="img"
         image={image}
         alt="green iguana"
@@ -161,11 +164,11 @@ export default function Projects() {
   return (
     <div className="projects" id="projects">
       <div className="project-container">
-        <Card className="project-card"
+        <Card
+          className="project-card"
           sx={{
-            maxWidth: {xl: 775, lg: 775,xs: 410},
-            height: {xl: 830, lg: 760, xs: 750 },
-            top: {xl: 48, lg: 48, xs: 0},
+            maxWidth: { desktop: 775, laptop: 775, mobile: 410 },
+            height: { desktop: 830, laptop: 665, mobile: 750 },
             margin: "0 auto",
             backgroundColor: "transparent",
             borderRadius: 10,
@@ -175,7 +178,11 @@ export default function Projects() {
         >
           <Typography
             variant="h3"
-            sx={{ textAlign: "center", color: "primary.main", fontSize: {lg: "30px"} }}
+            sx={{
+              textAlign: "center",
+              color: "primary.main",
+              fontSize: { desktop: "40px", laptop: "30px" },
+            }}
           >
             {projectName}
           </Typography>
@@ -183,10 +190,11 @@ export default function Projects() {
           <Card
             sx={{
               maxWidth: 1250,
+              textAlign: "center",
               margin: "0 auto",
               bottom: 0,
-              height: { xl: 300, lg: 270, xs: 340 },
-              width: {xl: 1250, xs: 410},
+              height: { desktop: 300, laptop: 250, mobile: 340 },
+              width: { desktop: 775, laptop: 775, mobile: 410 },
               position: "absolute",
               backgroundColor: "white",
               opacity: 0.9,
@@ -194,10 +202,13 @@ export default function Projects() {
           >
             <CardContent
               className="cardContent"
-              sx={{ width: { lg: 750, xs: 350 }, height: { xl: 140, lg: 120, xs: 320 }}}
+              sx={{
+                width: { laptop: 750, mobile: 350 },
+                height: { desktop: 140, laptop: 120, mobile: 320 },
+              }}
             >
               <Button
-                sx={{ marginRight: 3}}
+                sx={{ marginRight: 3 }}
                 variant="outlined"
                 color="secondary"
                 href={deploymentLink}
@@ -209,7 +220,7 @@ export default function Projects() {
               </Button>
               <Typography
                 mt="5px"
-                sx={{ fontSize: { lg: "20px", xs: "16px" } }}
+                sx={{ fontSize: { laptop: "20px", mobile: "16px" } }}
                 color="secondary.main"
               >
                 {" "}
@@ -225,7 +236,7 @@ export default function Projects() {
                 onClick={nextBtn}
                 sx={{
                   color: "secondary.main",
-                  fontSize: { lg: "10rem", xs: "3rem" },
+                  fontSize: { laptop: "10rem", mobile: "3rem" },
                 }}
               />
             </ToggleButton>
@@ -238,7 +249,7 @@ export default function Projects() {
                 onClick={prevBtn}
                 sx={{
                   color: "secondary.main",
-                  fontSize: { lg: "10rem", xs: "3rem" },
+                  fontSize: { laptop: "10rem", mobile: "3rem" },
                 }}
               />
             </ToggleButton>

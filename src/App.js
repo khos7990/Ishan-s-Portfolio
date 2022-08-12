@@ -24,8 +24,9 @@ const theme = createTheme({
       mobile: 0,
       tablet: 640,
       navbar: 850,
-      laptop: 1024,
-      desktop: 1200
+      resume: 1000,
+      laptop: 1350,
+      desktop: 1400
     }
   }
 });

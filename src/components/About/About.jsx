@@ -7,7 +7,7 @@ import "./About.css";
 
 export default function Education() {
   const theme = useTheme();
-  const screenSize = useMediaQuery(theme.breakpoints.down("md"));
+  const screenSize = useMediaQuery(theme.breakpoints.down("resume"));
   const icons = [
     require("../../Pictures/Skills/HTML.png"),
     require("../../Pictures/Skills/CSS.png"),
@@ -37,28 +37,44 @@ export default function Education() {
         <Typography
           variant="h4"
           className="text"
-          sx={{ textAlign: "center", fontWeight: "bold" }}
+          sx={{ textAlign: "center", fontWeight: "bold", mt: "0px" }}
         >
           About Me
         </Typography>
         <Typography
           className="text aboutme-text"
           sx={{
-            fontSize: { lg: "30px", md: "20px", sm: "20px", xs: "20px" },
-            wordSpacing: { lg: 10, md: 5, sm: 5, xs: 2 },
+            fontSize: {
+              desktop: "30px",
+              laptop: "30px",
+              resume: "30px",
+              tablet: "20px",
+              mobile: "20px",
+            },
+            wordSpacing: { desktop: 10, laptop: 10, tablet: 5, mobile: 2 },
           }}
           variant="h5"
         >
-          Hey, my name is Ishan and i'm happy you've came to visit my site. I am
-          doing what I enjoy which is creating projects, and solving challenges.
+          Hey, my name is Ishan and thanks for coming to my site. I am doing
+          what I enjoy which is creating projects, and solving challenges.
         </Typography>
       </div>
       <div className="technologies">
         <div className="title">
           <Typography
             sx={{
-              fontSize: { lg: "50px", md: "50px", sm: "60px", xs: "40px" },
-              variant: { lg: "h1", md: "h1", sm: "h2", xs: "h2" },
+              fontSize: {
+                desktop: "50px",
+                laptop: "38px",
+                tablet: "50px",
+                mobile: "40px",
+              },
+              variant: {
+                desktop: "h3",
+                laptop: "h3",
+                tablet: "h3",
+                mobile: "h3",
+              },
             }}
             color="secondary.main"
           >
@@ -77,8 +93,8 @@ export default function Education() {
               sx={{
                 fontSize: "20px",
                 color: "secondary.main",
-                textDecoration: 'none',
-                width: "60vw",
+                textDecoration: "none",
+                width: { tablet: "40vw", mobile: "100vw" },
                 border: "2px solid #000000",
               }}
               variant="outlined"
@@ -90,30 +106,34 @@ export default function Education() {
           <>
             <Typography
               variant="h3"
+              fontSize="38px"
               color="secondary.main"
-              sx={{ textAlign: "center" }}
-              className='resume-title'
+              sx={{ textAlign: "center", mt: "15px" }}
+              className="resume-title"
             >
               My Resume
             </Typography>
             <div className="resume">
               <img className="resumepic" src={ResumeScreenshot}></img>
             </div>
-            <div className="resumeAtag" >
-            <a href={Resume} download={Resume}>
-              <Button className="ResumeBtn"
-                sx={{
-                  fontSize: 38,
-                  color: "secondary.main",
-                  position: 'absolute',
-                  bottom: 0,
-                  left: 210
-                }}
-                variant="outlined"
-              >
-                View Resume
-              </Button>
-            </a>
+            <div className="resumeAtag">
+              <a href={Resume} download={Resume}>
+                <Button
+                  className="ResumeBtn"
+                  sx={{
+                    fontSize: 38,
+                    color: "secondary.main",
+                    border: "2px solid black",
+                    position: "absolute",
+                    height: "13vh",
+                    bottom: 0,
+                    width: "40vw",
+                  }}
+                  variant="outlined"
+                >
+                  View Resume
+                </Button>
+              </a>
             </div>
           </>
         )}
