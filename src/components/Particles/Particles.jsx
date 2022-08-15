@@ -36,7 +36,7 @@ export default function Particle() {
                 area: 1080,
               },
               limit: 0,
-              value: 200,
+              value: 100,
             },
             opacity: {
               animation: {

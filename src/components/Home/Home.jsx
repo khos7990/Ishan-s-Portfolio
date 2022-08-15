@@ -6,13 +6,14 @@ import {
   Typography,
   Button,
   Link,
+  IconButton,
 } from "@mui/material";
 import Typewriter from "typewriter-effect";
 import React from "react";
 import { useEffect, useRef } from "react";
 import "./Home.css";
 import "../../App.css";
-import Linkdin from "../../Pictures/Socials/Linkedin.png";
+import Linkedin from "../../Pictures/Socials/Linkedin.png";
 import Github from "../../Pictures/Socials/Github.png";
 
 export default function Home() {
@@ -46,7 +47,7 @@ export default function Home() {
               desktop: "100px",
               laptop: "50px",
               tablet: "60px",
-              mobile: "35px",
+              mobile: "33px",
             },
           }}
           fontWeight="300"
@@ -88,61 +89,19 @@ export default function Home() {
           </Button>
         </div>
       </div>
-
       <div className="socials">
         <div className="Linkedin">
-          <img className="LinkedinImg" src={Linkdin}></img>
-          <Link
-            sx={{ color: "secondary.main", textDecoration: "none" }}
-            href="https://www.linkedin.com/in/ishan-khosla-9b2615186/"
-          >
-            <Typography
-              sx={{
-                fontSize: {
-                  desktop: "30px",
-                  laptop: "20px",
-                  tablet: "20px",
-                  mobile: "20px",
-                },
-                variant: {
-                  desktop: "h3",
-                  laptop: "h4",
-                  tablet: "h4",
-                  mobile: "h4",
-                },
-              }}
-            >
-              Linkedin
-            </Typography>
-          </Link>
+            <IconButton href="https://www.linkedin.com/in/ishan-khosla-9b2615186/">
+          <img className="LinkedinImg" src={Linkedin}></img>
+            </IconButton>
         </div>
         <div className="Github">
+        <IconButton href="https://github.com/khos7990">
           <img className="GithubImg" src={Github}></img>
-          <Link
-            sx={{ color: "secondary.main", textDecoration: "none" }}
-            href="https://github.com/khos7990"
-          >
-            <Typography
-              sx={{
-                fontSize: {
-                  desktop: "30px",
-                  laptop: "20px",
-                  tablet: "20px",
-                  mobile: "20px",
-                },
-                variant: {
-                  desktop: "h3",
-                  laptop: "h4",
-                  tablet: "h4",
-                  mobile: "h4",
-                },
-              }}
-            >
-              Github
-            </Typography>
-          </Link>
+            </IconButton>
         </div>
       </div>
+
     </div>
   );
 }
